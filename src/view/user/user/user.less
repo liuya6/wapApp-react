@@ -1,0 +1,239 @@
+.user {
+  background-color: #f1f1f1;
+  .content {
+    position: relative;
+    .edit {
+      width: 148px;
+      height: 57px;
+      line-height: 57px;
+      position: absolute;
+      right: 0;
+      top: 30px;
+      background-color: rgba(0,0,0,0.2);
+      border-radius: 57px 0 0 57px;
+      text-align: center;
+      font-size: 28px;
+      color: #fff;
+      z-index: 1;
+      i{
+        margin-right: 10px;
+      }
+    }
+    .top {
+      background: @User-Bg;
+      background-size: 100%;
+      position: relative;
+      padding: 120px 0;
+      .top-content {
+        position: relative;
+        div {
+          display: inline-block;
+          vertical-align: top;
+          &:nth-child(1) {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-left: 30px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &:nth-child(2) {
+            margin-left: 25px;
+            h5 {
+              line-height: 50px;
+              span {
+                text-align: center;
+                &:nth-child(1) {
+                  font-size: 40px;
+                  color: #fff;
+                }
+                &:nth-child(2) {
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: 100px;
+                  height: 40px;
+                  line-height: 40px;
+                  margin-left: 35px;
+                  background: url("../../../assets/images/vipBg.png");
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%;
+                  font-size: 26px;
+                  color: #ffc71b;
+                  position: relative;
+                  &::after{
+                    content: '';
+                    position: absolute;
+                    width: 55px;
+                    height: 55px;
+                    background: url("../../../assets/images/vip.png");
+                    -webkit-background-size: 100% 100%;
+                    background-size: 100% 100%;
+                    top: -33px;
+                    right: -25px;
+                  }
+                }
+              }
+            }
+            p {
+              display: inline-block;
+              margin-top: 20px;
+              span{
+                color: #fff;
+                &:nth-child(1) {
+                  font-size: 28px;
+                  opacity: 0.7;
+                }
+                &:nth-child(2) {
+                  font-size: 40px;
+                }
+              }
+            }
+          }
+        }
+        .guiHu {
+          position: absolute;
+          width: 128px;
+          height: 46px;
+          text-align: center;
+          line-height: 46px;
+          border-radius: 46px;
+          font-size: 26px;
+          right: 30px;
+          top: 75px;
+          background-color: #fff;
+          color: #fd8d41;
+        }
+      }
+    }
+    .money{
+      width: 670px;
+      height: 96px;
+      line-height: 96px;
+      background-color: #ffffff;
+      box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      margin: auto;
+      display: flex;
+      justify-content: space-around;
+      padding: 0 10px;
+      li {
+        .Button {
+          width: 148px;
+          height: 56px;
+          text-align: center;
+          line-height: 56px;
+          vertical-align: middle;
+          color: #fff;
+          font-size: 26px;
+          i {
+            margin-right: 10px;
+            font-size: 40px;
+          }
+          &.amount {
+            background: url("../../../assets/images/amount.png") no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+          }
+          &.recharge {
+            background: url("../../../assets/images/recharge.png") no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+          }
+          &.withdraw {
+            background: url("../../../assets/images/withdraw.png") no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+          }
+          &.bill {
+            background: url("../../../assets/images/bill.png") no-repeat;
+            -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+          }
+        }
+      }
+    }
+    .record {
+      width: 690px;
+      height: 170px;
+      margin: 30px auto;
+      box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      > div {
+        display: inline-block;
+        height: 100%;
+        width: 33.3%;
+        position: relative;
+        background-color: #fff;
+
+        &::before{
+          content: "";
+          width: 1px; /*no*/
+          height: 126px;
+          background: #d6d4d4;
+          position: absolute;
+          right: 0;
+          top: 22px;
+        }
+        &:nth-child(3)::before{
+          background-color: transparent;
+        }
+        .Button {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          overflow: hidden;
+          position: relative;
+          i {
+            display: block;
+            color: @ThemeColor;
+            font-size: 55px;
+            margin: 30px 0 10px 0;
+          }
+          span {
+            font-size: 28px;
+            color: @User-Font-Color;
+          }
+        }
+      }
+
+    }
+    .safety,.msg {
+      width: 690px;
+      margin: auto;
+      box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      i {
+        color: @ThemeColor;
+        font-size: 35px;
+        margin-right: 15px;
+      }
+    }
+    .msg {
+      margin-top: 30px;
+    }
+    .loginOut {
+      margin: 60px auto 100px;
+      width: 690px;
+      height: 90px;
+      background-color: #ff4242;
+      box-shadow: 0 1px 14px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      text-align: center;
+      line-height: 90px;
+      font-size: 30px;
+      color: #fff;
+      overflow: hidden;
+      i{
+        font-size: 40px;
+      }
+      .Button {
+        width: 100%;
+      }
+    }
+  }
+}

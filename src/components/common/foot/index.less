@@ -1,0 +1,59 @@
+.footer{
+  height: 100px;
+  width: 100%;
+  background-color: #fff;
+  .borderTop();
+  li {
+    float: left;
+    width: 20%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    a{
+      display: block;
+      height: 100%;
+      font-size: 0;
+      color: @FontColor-Foot;
+
+      i {
+        font-size: 45px;
+        line-height: 65px;
+      }
+      p {
+        font-size: 22px;
+      }
+      .find {
+        width: 115px;
+        height: 115px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        bottom: 40px;
+        transform: translate(-50%);
+        .borderBtm();
+        img {
+          position: absolute;
+          left: 7px;
+          bottom: 7px;
+          width: 100px;
+          height: 100px;
+          transform: scale(1.5);
+        }
+      }
+      .findP {
+        margin-top: 65px;
+      }
+    }
+  }
+  .nav-active{
+    color: @ThemeColor;
+    i {
+      color: @ThemeColor;
+    }
+    p{
+      color: @ThemeColor;
+    }
+  }
+}

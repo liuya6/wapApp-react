@@ -1,0 +1,81 @@
+.loginpwd{
+  ul{
+    padding-left: 20px;
+    li {
+      margin-top: 50px;
+      position: relative;
+      overflow: hidden;
+      &:nth-child(2) {
+        .am-input-clear{
+          position: absolute;
+          right: 220px;
+        }
+        .codediv {
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          right: 60px;
+          width: 155px;
+          height: 80px;
+          line-height: 80px;
+        }
+        .code {
+          width: 100%;
+          text-align: center;
+          font-size: 30px;
+          color: #282828;
+          background-color: @Login-Input-Bg;
+          overflow: visible;
+          &.am-button-active {
+            background-color: #e1e1e1;
+          }
+          &::after {
+            content: '';
+            position: absolute;
+            width: 1px; /*no*/
+            height: 60px;
+            background-color: #d6d4d4;
+            left: -20px;
+            top: 10px;
+          }
+        }
+        .sendCodeIng {
+          color: @ThemeColor;
+        }
+      }
+      &:nth-child(3) {
+        a {
+          float: right;
+          color: @Forget-Pwd-Color;
+          margin-right: 30px;
+          font-size: 28px;
+        }
+      }
+      &:nth-child(4) {
+        margin-top: 130px;
+      }
+    }
+  }
+  .am-list-item.am-input-item {
+    width: 675px;
+    border-radius: 90px;
+    background-color: @Login-Input-Bg;
+    .am-input-label.am-input-label-5 {
+      width: 50px;
+    }
+    i.iconfont {
+      font-size: 50px;
+      color: @ThemeColor;
+    }
+  }
+  .loginBtn {
+    width: 710px;
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    background: @Login-Btn-Bg;
+    color: #fff;
+    border-radius: 90px;
+    font-size: 38px;
+  }
+}

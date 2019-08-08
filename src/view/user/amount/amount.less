@@ -1,0 +1,110 @@
+.amount {
+  background: @Amount-bg @BG;
+  background-size: 100%;
+  .headerWrap {
+    color: #fff;
+  }
+  .content {
+    padding-bottom: 100px;
+    .top {
+      margin-top: 20px;
+      div {
+        padding: 0 30px;
+        height: 46px;
+        line-height: 46px;
+        overflow: hidden;
+        span {
+          display: inline-block;
+          vertical-align: middle;
+          color: #fff;
+          font-size: 28px;
+        }
+        .Button {
+          padding: 0;
+          width: 134px;
+          border-radius: 46px;
+          background-color: #fff;
+          text-align: center;
+          float: right;
+          span {
+            color: @ThemeColor;
+          }
+        }
+      }
+      p {
+        margin-top: 30px;
+        font-size: 72px;
+        color: #ffffff;
+        text-align: center;
+      }
+    }
+    ul {
+      width: 690px;
+      margin: auto;
+      background-color: #ffffff;
+      box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      li{
+        margin: 0 30px;
+        height: 120px;
+        line-height: 120px;
+        overflow: hidden;
+        .borderBtm();
+        &:last-child {
+          border-bottom: none;
+        }
+        >div{
+          float: left;
+          color: @FontColor-Foot;
+          &:first-child{
+            width: 54px;
+            height: 54px;
+            background-color: #ffd75e;
+            border-radius: 50%;
+            vertical-align: middle;
+            margin-right: 15px;
+            transform: translate(0,60%);
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          &:nth-child(2) {
+            font-size: 26px;
+            margin-left: 20px;
+            width: 130px;
+            overflow: hidden;
+          }
+          &:nth-child(3) {
+            width: 190px;
+            overflow: hidden;
+            font-size: 30px;
+            color: @Amount-Money-Color;
+          }
+          &:nth-child(4),&:nth-child(5) {
+            width: 100px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            transform: translate(0,90%);
+            border-radius: 44px;
+            color: #fff;
+            font-size: 26px;
+            margin-left: 10px;
+            overflow: hidden;
+            .Button {
+              width: 100%;
+            }
+          }
+          &:nth-child(4) {
+            background: @Amount-Left-Btn;
+          }
+          &:nth-child(5) {
+            background: @Amount-Right-Btn;
+          }
+        }
+      }
+    }
+  }
+}
