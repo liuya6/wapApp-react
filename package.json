@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "antd-mobile": "^2.2.13",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "lib-flexible": "^0.3.2",
     "postcss-px2rem-exclude": "0.0.6",
     "prop-types": "^15.7.2",
